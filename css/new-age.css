@@ -253,8 +253,13 @@ section.about .badges .badge-link img {
     font-size: 70px;
   }
 }
-section.skills .skill {
-  min-height: 400px;
+section.skills div.skill {
+  min-height: 540px;
+}
+section.skills div.skill .feature-item p:first-child {
+  min-height: 250px;
+  display: flex;
+  align-items: center;
 }
 section.skills .section-heading {
   margin-bottom: 100px;

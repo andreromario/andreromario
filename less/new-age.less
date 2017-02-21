@@ -240,8 +240,18 @@ section.about {
 }
 
 section.skills {
-    .skill {
-        min-height: 400px;
+    div.skill {
+        min-height: 540px;
+
+        .feature-item {
+            p {
+                &:first-child {
+                    min-height: 250px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
     }
     .section-heading {
         h2 {

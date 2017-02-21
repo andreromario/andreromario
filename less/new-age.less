@@ -1,6 +1,15 @@
 @import "variables.less";
 @import "mixins.less";
  
+* {
+    outline: 0;
+}
+
+:focus, :active {
+    outline: 0;
+    border: none;
+}
+
 // Global Components
 html,
 body {
@@ -137,9 +146,9 @@ header {
     width: 100%;
     min-height: auto;
     overflow-y: hidden;
-    background: url("../img/bg-pattern.png"), @theme-secondary; /* fallback for old browsers */
-    background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, @theme-secondary , @theme-tertiary); /* Chrome 10-25, Safari 5.1-6 */
-    background: url("../img/bg-pattern.png"), linear-gradient(to left, @theme-secondary , @theme-tertiary); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: @theme-secondary; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, @theme-secondary , @theme-tertiary); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, @theme-secondary , @theme-tertiary); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white;
     .header-content {
         text-align: center;
@@ -241,7 +250,6 @@ section.about {
 
 section.skills {
     div.skill {
-        min-height: 540px;
 
         .feature-item {
             p {
@@ -260,7 +268,6 @@ section.skills {
         p {
             margin-bottom: 0;
         }
-        margin-bottom: 100px;
     }
     .device-container,
     .feature-item {
@@ -275,7 +282,7 @@ section.skills {
     }
     .feature-item {
         text-align: center;
-        margin-bottom: 100px;
+        margin-bottom: 30px;
         h3 {
             font-size: 30px;
         }
@@ -300,7 +307,7 @@ section.cta {
     .background-cover;
     background-position: center;
     background-image: url('../img/bg-cta.jpg');
-    padding: 250px 0;
+    min-height: 100%;
     .cta-content {
         position: relative;
         z-index: 1;
@@ -308,7 +315,6 @@ section.cta {
             margin-top: 0;
             margin-bottom: 25px;
             color: white;
-            max-width: 450px;
             font-size: 50px;
         }
         @media (min-width: 768px) {
@@ -324,6 +330,71 @@ section.cta {
         position: absolute;
         top: 0;
         left: 0;
+    }
+
+    .projectcl {
+        margin-bottom: 40px;
+    }
+
+    .project {
+        display: none;
+    }
+
+    .linkpt {
+        position: relative;
+        display: block;
+
+        .overlay-pt {
+            height: 100%;
+            width: 100%;
+            background-color: fade(black, 50%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            opacity: 0;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -moz-box-pack: center;
+            -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -moz-box-orient: vertical;
+            -moz-box-direction: normal;
+            -ms-flex-direction: column;
+                    flex-direction: column;
+
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+
+            i {
+                font-size: 30px;
+            }
+        }
+
+        &:hover {
+            .overlay-pt {
+                opacity: 1;
+            }
+        }
     }
 }
 
@@ -441,6 +512,12 @@ footer {
         background-color: @theme-primary;
         border-color: @theme-primary;
     }
+}
+
+.ctn {
+    border-color: @theme-primary;
+    background-color: @theme-primary;    
+    color: white;
 }
 
 .btn {

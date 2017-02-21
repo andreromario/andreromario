@@ -28,4 +28,8 @@
         }
     })
 
+    $("[data-fancybox]").fancybox({
+        // Options will go here
+    });
+
 })(jQuery); // End of use strict

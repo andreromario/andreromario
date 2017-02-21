@@ -329,11 +329,12 @@ section.cta {
 
 section.contact {
     text-align: center;
+    background: @theme-primary;
     h2 {
         margin-top: 0;
         margin-bottom: 25px;
         i {
-            color: @brand-google-plus;
+            color: @brand-linkedin;
         }
     }
     ul.list-social {
@@ -348,11 +349,19 @@ section.contact {
                 border-radius: 100%;
                 color: white;
             }
-            &.social-twitter {
+            &.social-email {
                 a {
-                    background-color: @brand-twitter;
+                    background-color: @brand-email;
                     &:hover {
-                        background-color: darken(@brand-twitter, 5%);
+                        background-color: darken(@brand-email, 5%);
+                    }
+                }
+            }
+            &.social-github {
+                a {
+                    background-color: @brand-github;
+                    &:hover {
+                        background-color: darken(@brand-github, 5%);
                     }
                 }
             }
@@ -364,11 +373,11 @@ section.contact {
                     }
                 }
             }
-            &.social-google-plus {
+            &.social-linkedin {
                 a {
-                    background-color: @brand-google-plus;
+                    background-color: @brand-linkedin;
                     &:hover {
-                        background-color: darken(@brand-google-plus, 5%);
+                        background-color: darken(@brand-linkedin, 5%);
                     }
                 }
             }

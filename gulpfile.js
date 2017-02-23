@@ -18,7 +18,8 @@ var minifyHtml = require('gulp-minify-html');
 var imageMin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 gulp.task('stylus',function(){
-    gulp.src(['src/stylus/*.styl'])
+    gulp.src(['src/stylus/*.styl'])        
+        .pipe(sourcemaps.init())
         .pipe(plumber({
             handleError: function (err) {
                 console.log(err);
@@ -28,8 +29,10 @@ gulp.task('stylus',function(){
         .pipe(stylus({
             'include css': true
         }))
-        .pipe(sourcemaps.init())
-        .pipe(autoPrefixer())
+        .pipe(autoPrefixer({
+            browsers: ['last 60 versions'],
+            cascade: true
+        }))
         .pipe(cssComb())
         .pipe(cmq({log:true}))
         .pipe(concat('main.css'))
@@ -51,14 +54,14 @@ gulp.task('js',function(){
     var fancybox = src + 'jquery.fancybox.min.js';
     var scripts = src + 'scripts.js';
 
-    gulp.src([jquery,bootstrap,easing,fancybox,scripts])
+    gulp.src([jquery,bootstrap,easing,fancybox,scripts])        
+        .pipe(sourcemaps.init())
         .pipe(plumber({
             handleError: function (err) {
                 console.log(err);
                 this.emit('end');
             }
         }))
-        .pipe(sourcemaps.init())
         .pipe(concat('main.js'))
         .pipe(gulp.dest('js'))
         .pipe(rename({
@@ -93,6 +96,9 @@ gulp.task('img',function(){
         .pipe(gulp.dest('img'))
         .pipe(reload())
 });
+gulp.task('reload',function(){
+    reload();
+});
 gulp.task('default',function(){
     browserSync.init({
         server: "./"
@@ -101,4 +107,5 @@ gulp.task('default',function(){
     gulp.watch('src/stylus/**/*.styl',['stylus']);
     gulp.watch('src/**/*.pug',['pug']);
     gulp.watch('src/img/**/*',['img']);
+    gulp.watch('./*.html',['reload']);
 });

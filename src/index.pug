@@ -1,0 +1,130 @@
+extends layouts/layout
+
+block vars
+	- var title = 'Desenvolvedor Web'
+	- var keywords = 'Desenvolvedor Web, Desenvolvedor Front-end, Desenvolvedor Full Stack, Sites Responsivos, WordPress, Mobile First'
+	- var description = 'Desenvolvedor web especializado em sites responsivos, sistemas MVC, CodeIgniter, WordPress e Mobile First'
+
+block content
+	section#about.about.bg-primary.text-center
+		.container
+			.row
+				.col-md-8.col-md-offset-2
+					h1.section-heading Desenvolvedor Web
+					p Tenho 25 anos, sou graduado em Sistemas para Internet, técnico em Informática para Internet, e comecei a atuar com desenvolvimento web há 7 anos com trabalhos como freelancer realizando pequenos projetos para me habituar ao mundo do desenvolvimento web. Após esse período de experiência consegui uma oportunidade em uma agência de publicidade onde pude colocar em prática tudo o que já sabia e agregar novos conhecimentos, e desde então já trabalhei em diversos projetos de pequeno, médio e grande porte.
+					p Sou um profissional autodidata, direto, focado, prático e simples. Prezo pela organização e bom relacionamento com os demais membros de Equipe. Gosto de novas ideias e sou loucamente apaixonado por novas tecnologias, pois aprender nunca é demais.
+					p Tenho objetivo de carreira, e crescimento. Sempre estou preparado e motivado para assumir riscos e novos desafios além de e atitudes inovadoras. Sei ouvir as demais opiniões, assim como também respeita-las. Me dedico à todos os projetos em que trabalho, visando alcançar os resultados e objetivos desejados, respeito as relações internas da empresa e a hierarquia, e sempre, sempre, e SEMPRE, busco novos aprendizados para possa me manter atulizado não somente na área de tecnologia, mas sim em um contexto geral.
+					.badges
+						a.btn.btn-outline.btn-xl.page-scroll(href='#skills') Habilidades
+	section#skills.skills
+		.container
+			.row
+				.col-lg-12.text-center
+					.section-heading
+						h2 Habilidades
+						hr
+			.row
+				.col-md-3.skill
+					.feature-item
+						p.text-center
+							img.img-responsive.center-block(src='img/git.png', alt='GitHub & BitBucket')
+						h3 Git(GitHub/BitBucket)
+						p.text-muted Ferramentas de versionamento de projetos.
+				.col-md-3.skill
+					.feature-item
+						p.text-center
+							img.img-responsive.center-block(src='img/html5-css3.png', alt='HTML5 & CSS3')
+						h3 HTML5 & CSS3
+						p.text-muted Versões mais recentes do HTML e CSS
+				.col-md-3.skill
+					.feature-item
+						p.text-center
+							img.img-responsive.center-block(src='img/js-rwd.png', alt='JavaScript Web Design Responsivo')
+						h3 JS & RWD
+						p.text-muted JavaScript e Web Design Responsivo(Mobile-First)
+				.col-md-3.skill
+					.feature-item
+						p.text-center
+							img.img-responsive.center-block(src='img/pre-processors.png', alt='Stylus, SASS e LESS')
+						h3 Pré-Processadores
+						p.text-muted Otimização de tempo e performance com os pré-processadores Stylus, SASS e LESS
+			.row
+				.col-md-3.skill
+					.feature-item
+						p.text-center
+							img.img-responsive.center-block(src='img/pug.png', alt='Pug(Jade)')
+						h3 Pug
+						p.text-muted Pré-processador HTML para sites estáticos sem a necessidade de uma linguagem própria para programação.
+				.col-md-3.skill
+					.feature-item
+						p.text-center
+							img.img-responsive.center-block(src='img/php-mysql.png', alt='PHP & MySQL')
+						h3 PHP, SQL & MySQL
+						p.text-muted Linguagem de programação para o desenvolvimento de sistemas e linguagem de banco de dados.
+				.col-md-3.skill
+					.feature-item
+						p.text-center
+							img.img-responsive.center-block(src='img/task-runners.png', alt='Grunt & Gulp')
+						h3 Gulp & Grunt
+						p.text-muted Task runners que auxiliam no trabalho do desenvolvedor no dia-a-dia.
+				.col-md-3.skill
+					.feature-item
+						p.text-center
+							img.img-responsive.center-block(src='img/nodejs.png', alt='NPM & Node.JS')
+						h3 NPM & Node.JS
+						p.text-muted Dependências, pacotes, tasks para o dia-a-dia.
+			.row
+				.col-md-3.skill
+					.feature-item
+						p.text-center
+							img.img-responsive.center-block(src='img/codeigniter.png', alt='CodeIgniter & MVC')
+						h3 Frameworks MVC
+						p.text-muted Experiência com CodeIgniter e CakePHP, excelentes frameworks MVC orientado a objetos para o desenvolvimento de sistemas web.
+				.col-md-3.skill
+					.feature-item
+						p.text-center
+							img.img-responsive.center-block(src='img/wordpress.png', alt='WordPress')
+						h3 WordPress
+						p.text-muted Desenvolvimento de temas e plugins para esta incrível ferramenta para sites, portais e blogs com grande movimentação de conteúdo.
+				.col-md-3.skill
+					.feature-item
+						p.text-center
+							img.img-responsive.center-block(src='img/unix.png', alt='MacOS/Linux')
+						h3 MacOS/Linux
+						p.text-muted Sem medo do terminal! SSH, Git, NPM, plataformas baseadas em UNIX em geral.
+				.col-md-3.skill
+					.feature-item
+						p.text-center
+							img.img-responsive.center-block(src='img/google.png', alt='SEO')
+						h3 SEO
+						p.text-muted Não adianta o site ser lindo, é com um eficaz SEO que atingimos os resultados esperados pelo cliente.
+			.row
+				.col-md-12.text-center
+					a.btn.btn-outline.btn-xl.page-scroll.ctn(href='#portfolio') Portfólio
+	section#portfolio.cta
+		.cta-content
+
+			.container
+				.row
+					.col-md-12
+						h2.text-center Portfólio
+				.row
+					.col-md-12
+						p.text-center Para conhecer alguns dos projetos que já participei do desenvolvimento, entre em contato.
+				p.text-center
+					a.btn.btn-outline.btn-xl.page-scroll(href='#contact') Entre em Contato
+
+		.overlay
+	section#contact.contact.bg-primary
+		.container
+			h2 Entre em Contato!
+			ul.list-inline.list-social
+				li.social-email
+					a(href='mailto:andreromario@live.com', target='_blank')
+						i.fa.fa-envelope
+				li.social-github
+					a(href='https://github.com/andreromario', target='_blank')
+						i.fa.fa-github
+				li.social-linkedin
+					a(href='https://www.linkedin.com/in/andr%C3%A9-rom%C3%A1rio-pereira-de-castro-6002b28a', target='_blank')
+						i.fa.fa-linkedin

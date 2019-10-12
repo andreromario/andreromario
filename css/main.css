@@ -441,7 +441,7 @@ h6 .small,
 h6 small {
 	font-weight: 400;
 	line-height: 1;
-	color: #777;
+	color: #595959;
 }
 
 .h1,
@@ -579,7 +579,7 @@ mark {
 }
 
 .text-muted {
-	color: #777;
+	color: #595959;
 }
 
 .text-primary {
@@ -730,7 +730,7 @@ dd {
 abbr[data-original-title],
 abbr[title] {
 	cursor: help;
-	border-bottom: 1px dotted #777;
+	border-bottom: 1px dotted #595959;
 }
 
 .initialism {
@@ -757,7 +757,7 @@ blockquote small {
 	font-size: 80%;
 	line-height: 1.42857143;
 	display: block;
-	color: #777;
+	color: #595959;
 }
 
 blockquote .small:before,
@@ -1128,7 +1128,7 @@ caption {
 	padding-top: 8px;
 	padding-bottom: 8px;
 	text-align: left;
-	color: #777;
+	color: #595959;
 }
 
 th {
@@ -2265,7 +2265,7 @@ fieldset[disabled] .btn-link {
 fieldset[disabled] .btn-link:focus,
 fieldset[disabled] .btn-link:hover {
 	text-decoration: none;
-	color: #777;
+	color: #595959;
 }
 
 .btn-group-lg > .btn,
@@ -2442,7 +2442,7 @@ tbody.collapse.in {
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:focus,
 .dropdown-menu > .disabled > a:hover {
-	color: #777;
+	color: #595959;
 }
 
 .dropdown-menu > .disabled > a:focus,
@@ -2477,7 +2477,7 @@ tbody.collapse.in {
 	display: block;
 	padding: 3px 20px;
 	white-space: nowrap;
-	color: #777;
+	color: #595959;
 }
 
 .dropdown-backdrop {
@@ -2958,7 +2958,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .nav > li.disabled > a {
-	color: #777;
+	color: #595959;
 }
 
 .nav .nav-divider {
@@ -2978,7 +2978,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav > li.disabled > a:hover {
 	cursor: not-allowed;
 	text-decoration: none;
-	color: #777;
+	color: #595959;
 	background-color: transparent;
 }
 
@@ -3304,15 +3304,15 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default .navbar-brand {
-	color: #777;
+	color: #595959;
 }
 
 .navbar-default .navbar-text {
-	color: #777;
+	color: #595959;
 }
 
 .navbar-default .navbar-nav > li > a {
-	color: #777;
+	color: #595959;
 }
 
 .navbar-default .navbar-toggle {
@@ -3324,7 +3324,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default .navbar-link {
-	color: #777;
+	color: #595959;
 }
 
 .navbar-default .navbar-link:hover {
@@ -3332,7 +3332,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default .btn-link {
-	color: #777;
+	color: #595959;
 }
 
 .navbar-default .navbar-brand:focus,
@@ -3502,7 +3502,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
 }
 
 .breadcrumb > .active {
-	color: #777;
+	color: #595959;
 }
 
 .pagination {
@@ -3577,7 +3577,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
 .pagination > .disabled > span:focus,
 .pagination > .disabled > span:hover {
 	cursor: not-allowed;
-	color: #777;
+	color: #595959;
 	border-color: #ddd;
 	background-color: #fff;
 }
@@ -3670,7 +3670,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
 .pager .disabled > a:hover,
 .pager .disabled > span {
 	cursor: not-allowed;
-	color: #777;
+	color: #595959;
 	background-color: #fff;
 }
 
@@ -3700,7 +3700,7 @@ a.label:hover {
 }
 
 .label-default {
-	background-color: #777;
+	background-color: #595959;
 }
 
 .label-default[href]:focus,
@@ -3766,7 +3766,7 @@ a.label:hover {
 	color: #fff;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
-	background-color: #777;
+	background-color: #595959;
 }
 
 .badge:empty {
@@ -4159,7 +4159,7 @@ button.list-group-item:hover {
 .list-group-item.disabled:focus,
 .list-group-item.disabled:hover {
 	cursor: not-allowed;
-	color: #777;
+	color: #595959;
 	background-color: #eee;
 }
 
@@ -4172,7 +4172,7 @@ button.list-group-item:hover {
 .list-group-item.disabled .list-group-item-text,
 .list-group-item.disabled:focus .list-group-item-text,
 .list-group-item.disabled:hover .list-group-item-text {
-	color: #777;
+	color: #595959;
 }
 
 .list-group-item.active,
@@ -9447,12 +9447,12 @@ p {
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
 	color: #207780 !important;
-	background-color: transparent;
+	background-color: #dedede;
 }
 
 .navbar-default .nav > li.active > a:focus:hover,
 .navbar-default .nav > li.active > a:hover {
-	background-color: transparent;
+	background-color: #dedede;
 }
 
 header {
@@ -9758,6 +9758,7 @@ footer {
 footer p {
 	font-size: 12px;
 	margin: 0;
+	color: #fff;
 }
 
 footer ul {
@@ -10493,11 +10494,11 @@ input[type=month].input-lg {
 
 .navbar-default {
 	border-color: transparent;
-	background-color: transparent;
+	background-color: #dedede;
 }
 
 .navbar-default .navbar-header .navbar-brand {
-	color: rgba(255,255,255,.7);
+	color: #000;
 }
 
 .navbar-default.affix {
@@ -10516,7 +10517,7 @@ input[type=month].input-lg {
 
 .navbar-default .nav > li > a,
 .navbar-default .nav > li > a:focus {
-	color: rgba(255,255,255,.7);
+	color: #000;
 }
 
 .navbar-default .nav > li > a:focus:hover,
@@ -11336,7 +11337,7 @@ th.visible-lg {
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-	color: #777;
+	color: #595959;
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,

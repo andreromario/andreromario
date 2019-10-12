@@ -1,4 +1,12 @@
-(function($) {
+var navbar_toggle = document.getElementsByClassName('navbar-toggle')[0];
+var menu = document.getElementById('menu');
+
+if (navbar_toggle) {
+    navbar_toggle.addEventListener('click', function() {
+        menu.classList.toggle('collapse');
+    });
+}
+/* (function($) {
     "use strict"; // Start of use strict
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -33,3 +41,4 @@
     });
 
 })(jQuery); // End of use strict
+ */
